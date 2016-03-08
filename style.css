@@ -1,11 +1,34 @@
 @charset "utf-8";
 /* CSS Document */
 
+body {
+	font-family: Futura, 'Poppins', 'Raleway', sans-serif;
+}
+
 header {
 	font-size: 2em;
 	text-align: center;
 	font-family: 'Poppins', sans-serif;
 	letter-spacing: .3em;
+}
+
+.boldtext {
+	position:absolute;
+	top:30%;
+	text-align:center;
+	width:100%;
+	font-size:8em;
+	line-height:0.2em;
+}
+
+/*.top {
+	text-decoration:underline;
+}*/
+
+.bottom {
+	text-decoration:none;
+	font-size:1em!important;
+	line-height:1em;
 }
 
 #classname {
@@ -28,11 +51,11 @@ section {
 	perspective: 800px;
 	perspective-origin: 50% 50%;
 	transform-style: preserve-3d;
-	transition-duration:3s;
+	transition-duration:1.5s;
 }
 
 section:active {
-	transform: rotate3d(0,0,1,180deg);
+	transform: rotate3d(0,0,1,720deg);
 }
 
 @keyframes spin {
@@ -43,10 +66,16 @@ section:active {
 	}
 }
 
-.container {
+.container1 {
 	transform-style:preserve-3d;
 	animation:spin 10s;
 	animation-iteration-count: infinite;
+}
+.container2 {
+	transform-style:preserve-3d;
+	animation:spin 50s;
+	animation-iteration-count: infinite;
+	position:absolute;
 }
 
 /*REDBIRD*/
