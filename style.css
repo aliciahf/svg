@@ -3,6 +3,8 @@
 
 body {
 	font-family: Futura, 'Poppins', 'Raleway', sans-serif;
+	overflow-x: hidden;
+	text-align:center;
 }
 
 header {
@@ -14,10 +16,10 @@ header {
 
 .boldtext {
 	position:absolute;
-	top:30%;
+	top:50%;
 	text-align:center;
 	width:100%;
-	font-size:8em;
+	font-size:90px;
 	line-height:0.2em;
 }
 
@@ -40,8 +42,7 @@ header {
 #wrapper {
 	background-color: #FFF;
 	width: 100%;
-	margin: auto;
-	padding: 3.5%;
+	padding-top: 3.5%;
 	text-align:center;
 }
 
@@ -76,6 +77,8 @@ section:active {
 	animation:spin 50s;
 	animation-iteration-count: infinite;
 	position:absolute;
+	float:center;
+	left:50%;
 }
 
 /*REDBIRD*/
