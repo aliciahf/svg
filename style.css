@@ -16,13 +16,65 @@ header {
 }
 #wrapper {
 	background-color: #FFF;
-	width: 75%;
+	width: 100%;
 	margin: auto;
 	padding: 3.5%;
-	
+	text-align:center;
 }
 
 section {
 	width: 55%;
 	margin: auto;
+	perspective: 800px;
+	perspective-origin: 50% 50%;
+	transform-style: preserve-3d;
+	transition-duration:3s;
+}
+
+section:active {
+	transform: rotate3d(0,0,1,180deg);
+}
+
+@keyframes spin {
+	from {
+		transform: rotateY(0deg);
+	} to {
+		transform: rotateY(360deg);
+	}
+}
+
+.container {
+	transform-style:preserve-3d;
+	animation:spin 10s;
+	animation-iteration-count: infinite;
+}
+
+/*REDBIRD*/
+.st4:hover,.st5:hover, .st6 {
+	fill:#931A1D;
+}
+.st5, .st6:hover,.st7:hover { 
+	fill:#700F17;
+}
+.st4,.st5:active,.st6:active,.st7:active { 
+	fill:#BA4F61;
+}
+.st7{ 
+	fill:#660E14;
+}
+
+/* BIRD */
+
+@keyframes twirl {
+	from {
+		transform:rotate;
+	    transform-origin: 400px 600px;
+	} to {
+		transform: rotate(360deg);
+	}
+}
+
+#Bird_1{
+	animation:twirl 4s;
+	animation-iteration-count: infinite;
 }
